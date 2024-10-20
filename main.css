@@ -1,0 +1,121 @@
+.top-bar {
+    background-color: rgb(33, 14, 174);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%; /* Garante que a top bar ocupe 100% da largura */
+    z-index: 1000;
+    position: fixed; /* Fixa a top bar no topo */
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Adicione esta parte para estilizar os botões na top bar */
+.top-bar button {
+    background-color: white; /* Cor de fundo do botão */
+    color: rgb(33, 14, 174); /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s, transform 0.3s; /* Efeito suave para hover */
+    margin: 0 10px; /* Margem entre os botões */
+}
+
+/* Efeito hover para os botões */
+.top-bar button:hover {
+    background-color: rgb(33, 14, 174); /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+
+/* Estilos do corpo */
+body {
+    background-color: rgb(252, 248, 248); /* Cor de fundo do corpo */
+    color: azure; /* Cor do texto */
+}
+
+/* Estilos para o texto da sinopse */
+.sinopse-texto {
+    max-width: 600px; 
+    margin: 1 auto; 
+    text-align: justify; 
+    line-height: 1.6; 
+}
+
+/* Estilos para o container principal */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para artigos */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui espaço entre os artigos */
+}
+
+/* Estilo para cada artigo */
+article {
+    background-color: #333; /* Cor de fundo do artigo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    flex: 1; /* Faz o artigo ocupar o espaço disponível */
+}
+
+/* Estilos para imagens dentro de artigos */
+article img {
+    width: 100%; /* Largura total */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px; /* Cantos arredondados */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estilo geral de elementos */
+* {
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
+    margin: 5px; /* Margem padrão */
+    padding: 5px; /* Padding padrão */
+}
+
+/* Estilos para seções */
+section {
+    padding: 16px 0; /* Espaçamento superior e inferior */
+}
+
+/* Estilo para cabeçalhos de seção */
+section h2 {
+    margin-bottom: 16px; /* Margem inferior */
+}
+
+/* Estilos para artigos de tecnologia */
+.tech-articles {
+    margin-top: 20px; /* Margem superior */
+}
+
+.tech-articles article {
+    background-color: #6e1717; /* Cor de fundo dos artigos de tecnologia */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilo para imagens específicas */
+.cristo-grande {
+    width: 800px; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilo para links de navegação */
+nav a {
+    color: black; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado */
+}
